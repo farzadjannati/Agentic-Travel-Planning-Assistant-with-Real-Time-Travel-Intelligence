@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:6d28d9,100:06b6d4&height=220&section=header&text=Agentic%20Travel%20Planning%20Assistant&fontSize=34&fontColor=ffffff&fontAlignY=50&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:be123c,100:f59e0b&height=220&section=header&text=Agentic%20Travel%20Planning%20Assistant&fontSize=34&fontColor=ffffff&fontAlignY=50&animation=fadeIn" />
 </div>
 
 ---
