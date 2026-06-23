@@ -10,18 +10,18 @@ The project demonstrates how autonomous agents can orchestrate multiple travel s
 
 <div align="left">
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat\&logo=python\&logoColor=white)](https://www.python.org/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Agentic_Workflow-orange?style=flat)](https://www.langchain.com/langgraph)
-[![LangChain](https://img.shields.io/badge/LangChain-ReAct_Agent-success?style=flat)](https://www.langchain.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o_mini-green?style=flat\&logo=openai\&logoColor=white)](https://openai.com/)
-[![LanceDB](https://img.shields.io/badge/LanceDB-Vector_Database-red?style=flat)](https://lancedb.github.io/lancedb/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Agentic_Workflow-C05621?style=flat&logo=langchain&logoColor=white)](https://www.langchain.com/langgraph)
+[![LangChain](https://img.shields.io/badge/LangChain-ReAct_Agent-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://www.langchain.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o_mini-10A37F?style=flat&logo=openai&logoColor=white)](https://openai.com/)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Sentence_Transformers-F5A623?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/)
+[![LanceDB](https://img.shields.io/badge/LanceDB-Vector_Database-D84B2A?style=flat)](https://lancedb.github.io/lancedb/)
+[![LlamaParse](https://img.shields.io/badge/LlamaParse-Document_Parsing-6D28D9?style=flat)](https://cloud.llamaindex.ai/parse)
 [![Amadeus API](https://img.shields.io/badge/Amadeus-Travel_API-005EB8?style=flat)](https://developers.amadeus.com/)
-[![Tavily Search](https://img.shields.io/badge/Tavily-Real_Time_Search-1A2B3C?style=flat)](https://tavily.com/)
-[![LlamaParse](https://img.shields.io/badge/LlamaParse-Document_Parsing-8A2BE2?style=flat)](https://cloud.llamaindex.ai/parse)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Sentence_Transformers-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/)
-[![Agentic AI](https://img.shields.io/badge/AI-Agentic_Systems-0891b2?style=flat)](#)
-[![Travel AI](https://img.shields.io/badge/Domain-Travel_AI-success?style=flat)](#)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
+[![Tavily Search](https://img.shields.io/badge/Tavily-Real_Time_Search-1E293B?style=flat)](https://tavily.com/)
+[![Agentic AI](https://img.shields.io/badge/AI-Agentic_Systems-0284C7?style=flat)](#)
+[![Travel AI](https://img.shields.io/badge/Domain-Travel_AI-059669?style=flat)](#)
+[![License](https://img.shields.io/badge/License-MIT-4B5563?style=flat)](https://opensource.org/licenses/MIT)
 
 </div>
 
