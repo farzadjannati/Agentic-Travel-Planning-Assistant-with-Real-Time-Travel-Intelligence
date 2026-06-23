@@ -6,9 +6,9 @@
 
 ---
 
-# Agentic Travel Planning Assistant with Real-Time Travel Intelligence
+# Agentic Travel Planning Assistant with LangGraph, RAG, and Real-Time Travel Intelligence
 
-The project demonstrates how Agentic AI systems can orchestrate retrieval pipelines, external travel services, and real-time information sources to automate end-to-end travel planning through a unified LangGraph-based workflow.
+The project demonstrates how autonomous agents can orchestrate multiple travel services, retrieval systems, and external APIs to provide grounded travel recommendations, itinerary generation, and real-time travel intelligence through a unified Agentic AI workflow.
 
 <div align="left">
 
@@ -34,32 +34,31 @@ This project introduces an Agentic AI Travel Assistant that combines LangGraph o
 1. [Overview](#-overview)
 2. [Key Features](#-key-features)
 3. [System Architecture](#-system-architecture)
-4. [Why Agentic AI?](#-why-agentic-ai)
-5. [Agent Workflow](#agent-workflow)
-6. [Travel Knowledge Retrieval](#-travel-knowledge-retrieval)
-7. [Tools and Technologies](#-tools-and-technologies)
-8. [Project Structure](#-project-structure)
-9. [Installation](#-installation)
-10. [Environment Variables](#-environment-variables)
-11. [Running the Application](#-running-the-application)
-12. [Contributing](#-contributing)
-13. [License](#license)
-14. [Author](#author)
-15. [Support](#-support)
+4. [Agent Workflow](#agent-workflow)
+5. [Travel Knowledge Retrieval](#-travel-knowledge-retrieval)
+6. [Tools and Technologies](#-tools-and-technologies)
+7. [Project Structure](#-project-structure)
+8. [Installation](#-installation)
+9. [Environment Variables](#-environment-variables)
+10. [License](#license)
+11. [Author](#author)
+12. [Support](#-support)
 
 # 📌 Overview
 
-Large Language Models alone are often insufficient for complex travel planning tasks because they cannot reliably access real-time information or coordinate multiple travel services.
+TravelBot is an intelligent travel planning assistant built with Agentic AI principles.
 
-This project introduces an Agentic AI architecture capable of:
+Instead of relying on a single LLM response, the system uses a LangGraph-powered workflow capable of selecting tools, retrieving external knowledge, and coordinating multiple travel services before generating a final answer.
 
-* Planning multi-step travel tasks
-* Retrieving destination knowledge
-* Accessing external travel services
-* Combining multiple information sources
-* Generating personalized travel recommendations
+Core capabilities include:
 
-The result is a travel intelligence system capable of delivering more grounded, actionable, and context-aware responses.
+* Flight Search
+* Hotel Discovery
+* Restaurant Recommendations
+* Weather Forecasting
+* Currency Exchange Lookup
+* Travel FAQ Question Answering
+* Knowledge-Grounded Trip Planning
 
 ---
 
@@ -79,38 +78,93 @@ The result is a travel intelligence system capable of delivering more grounded, 
 
 ---
 
-# 🏗 System Architecture
+# System Architecture
 
-The system combines agentic reasoning, retrieval-augmented generation, vector search, and external travel APIs within a unified orchestration framework.
+The system follows a layered Agentic AI architecture that combines autonomous reasoning, retrieval-augmented generation (RAG), vector search, and real-time travel services within a unified orchestration framework.
 
-Core layers include:
+The LangGraph agent acts as the central decision-making component, dynamically selecting tools, retrieving travel knowledge, and synthesizing information from multiple sources before generating the final recommendation.
 
-* Agent Layer (LangGraph + ReAct)
-* Tool Execution Layer
-* Retrieval Layer (LanceDB)
-* Travel Knowledge Layer
-* External Travel APIs
-* Response Generation Layer
+```mermaid
+flowchart TB
 
-This architecture enables dynamic planning, autonomous tool selection, knowledge retrieval, and grounded response generation.
+subgraph User Layer
+    U[Traveler Request]
+end
 
----
+subgraph Agent Layer
+    A[LangGraph ReAct Agent]
+    P[Task Planning & Reasoning]
+end
 
-# 🤖 Why Agentic AI?
+subgraph Tool Layer
+    F[Flight Search]
+    H[Hotel Discovery]
+    R[Restaurant Recommendation]
+    W[Weather Intelligence]
+    C[Currency Exchange]
+end
 
-Traditional travel assistants rely on a single LLM response, limiting their ability to access external information and perform multi-step planning.
+subgraph Retrieval Layer
+    V[LanceDB Vector Store]
+    E[SentenceTransformer Embeddings]
+end
 
-This project adopts an Agentic AI architecture that enables:
+subgraph Knowledge Layer
+    KB[Travel Knowledge Base]
+    FAQ[Travel FAQs]
+    DOCS[Travel Guides]
+end
 
-* Dynamic tool selection
-* Multi-step reasoning
-* Autonomous planning
-* Knowledge-grounded generation
-* Real-time information retrieval
+subgraph External Services
+    AM[Amadeus API]
+    TV[Tavily Search]
+end
 
-As a result, the assistant can coordinate multiple travel services and generate more reliable recommendations.
+subgraph Generation Layer
+    LLM[GPT-4o-mini]
+    OUT[Personalized Travel Recommendation]
+end
 
----
+U --> A
+A --> P
+
+P --> F
+P --> H
+P --> R
+P --> W
+P --> C
+P --> V
+
+F --> AM
+H --> AM
+R --> TV
+W --> TV
+
+V --> E
+E --> KB
+
+KB --> FAQ
+KB --> DOCS
+
+AM --> LLM
+TV --> LLM
+KB --> LLM
+
+LLM --> OUT
+```
+
+### Architectural Components
+
+| Layer | Responsibility |
+|---------|---------------|
+| Agent Layer | Task decomposition, reasoning, and tool orchestration |
+| Tool Layer | Execution of travel-related actions and API calls |
+| Retrieval Layer | Semantic retrieval over travel knowledge |
+| Knowledge Layer | FAQs, travel guides, and destination information |
+| External Services | Real-time travel and web intelligence |
+| Generation Layer | Response synthesis and itinerary generation |
+
+This architecture enables the assistant to combine real-time travel information with retrieved domain knowledge, resulting in more grounded recommendations, better planning capabilities, and reduced hallucinations compared to standalone LLM-based travel assistants.
 
 # Agent Workflow
 
@@ -183,7 +237,7 @@ LanceDB
 
 ---
 
-# 🔧 Tools and Technologies
+# Tools and Technologies
 
 | Component            | Purpose                         |
 | -------------------- | ------------------------------- |
@@ -265,31 +319,6 @@ LLAMA_CLOUD_API_KEY=YOUR_API_KEY
 
 ---
 
-# ▶ Running the Application
-
-Open and run:
-
-```text
-travelbot_agent.ipynb
-```
-
-using Jupyter Notebook or Google Colab.
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-Feel free to:
-
-* Open Issues
-* Submit Pull Requests
-* Suggest Improvements
-* Report Bugs
-
----
-
 # License
 
 This project is licensed under the MIT License.
@@ -318,6 +347,6 @@ If you find this project useful, consider giving it a star ⭐
 
 <p align="center">
 
-Built with ❤️ using LangGraph, OpenAI, LanceDB, Tavily, Amadeus and RAG
+Built with ❤️ using LangGraph, OpenAI, LanceDB, Tavily, Amadeus
 
 </p>
