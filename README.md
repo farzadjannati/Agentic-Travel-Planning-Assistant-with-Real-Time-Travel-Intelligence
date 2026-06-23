@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:0f766e,100:14b8a6&height=220&section=header&text=Agentic%20Travel%20Planning%20Assistant&fontSize=34&fontColor=ffffff&fontAlignY=50&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:0f766e,100:38bdf8&height=220&section=header&text=Agentic%20Travel%20Planning%20Assistant&fontSize=34&fontColor=ffffff&fontAlignY=50&animation=fadeIn" />
 
 </div>
 
 ---
 
-# Agentic Travel Planning Assistant with LangGraph, RAG, and Real-Time Travel Intelligence
+# Agentic Travel Planning Assistant with Real-Time Travel Intelligence
 
-The project demonstrates how autonomous agents can orchestrate multiple travel services, retrieval systems, and external APIs to provide grounded travel recommendations, itinerary generation, and real-time travel intelligence through a unified Agentic AI workflow.
+The project demonstrates how Agentic AI systems can orchestrate retrieval pipelines, external travel services, and real-time information sources to automate end-to-end travel planning through a unified LangGraph-based workflow.
 
 <div align="left">
 
@@ -17,67 +17,98 @@ The project demonstrates how autonomous agents can orchestrate multiple travel s
 [![LangChain](https://img.shields.io/badge/LangChain-ReAct_Agent-success?style=flat)](https://www.langchain.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o_mini-green?style=flat\&logo=openai\&logoColor=white)](https://openai.com/)
 [![LanceDB](https://img.shields.io/badge/LanceDB-Vector_Database-red?style=flat)](https://lancedb.github.io/lancedb/)
-[![Amadeus](https://img.shields.io/badge/Amadeus-Travel_API-blueviolet?style=flat)](https://developers.amadeus.com/)
-[![Tavily](https://img.shields.io/badge/Tavily-Web_Search-purple?style=flat)](https://tavily.com/)
-[![RAG](https://img.shields.io/badge/RAG-Travel_Knowledge_Base-teal?style=flat)](#)
+[![Agentic AI](https://img.shields.io/badge/AI-Agentic_Systems-0891b2?style=flat)](#)
+[![Travel AI](https://img.shields.io/badge/Domain-Travel_AI-success?style=flat)](#)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
 
 </div>
 
 ## Abstract
 
-Travel planning often requires users to navigate multiple disconnected services for flights, hotels, local attractions, restaurants, weather conditions, and travel regulations.
+Travel planning typically requires users to interact with multiple disconnected services for transportation, accommodation, destination discovery, weather forecasting, and travel regulations.
 
-This project introduces an Agentic AI Travel Assistant that combines LangGraph-based orchestration, ReAct reasoning, Retrieval-Augmented Generation (RAG), and real-time travel APIs to automate the travel planning process.
-
-The system dynamically selects tools, retrieves travel knowledge from vector databases, integrates external travel services, and generates grounded recommendations and personalized itineraries.
+This project introduces an Agentic AI Travel Assistant that combines LangGraph orchestration, ReAct reasoning, Retrieval-Augmented Generation (RAG), vector search, and real-time travel APIs to automate the travel planning process. The system dynamically selects tools, retrieves destination knowledge, integrates external travel services, and generates grounded recommendations and personalized travel itineraries.
 
 ## Table of Contents
 
-1. Overview
-2. Key Features
-3. Agent Workflow
-4. Travel Knowledge Retrieval
-5. Tools and Services
-6. Project Structure
-7. Installation
-8. Environment Variables
-9. Running the Application
-10. Contributing
-11. License
-12. Author
-13. Support
+1. [Overview](#-overview)
+2. [Key Features](#-key-features)
+3. [System Architecture](#-system-architecture)
+4. [Why Agentic AI?](#-why-agentic-ai)
+5. [Agent Workflow](#agent-workflow)
+6. [Travel Knowledge Retrieval](#-travel-knowledge-retrieval)
+7. [Tools and Technologies](#-tools-and-technologies)
+8. [Project Structure](#-project-structure)
+9. [Installation](#-installation)
+10. [Environment Variables](#-environment-variables)
+11. [Running the Application](#-running-the-application)
+12. [Contributing](#-contributing)
+13. [License](#license)
+14. [Author](#author)
+15. [Support](#-support)
 
 # 📌 Overview
 
-TravelBot is an intelligent travel planning assistant built with Agentic AI principles.
+Large Language Models alone are often insufficient for complex travel planning tasks because they cannot reliably access real-time information or coordinate multiple travel services.
 
-Instead of relying on a single LLM response, the system uses a LangGraph-powered workflow capable of selecting tools, retrieving external knowledge, and coordinating multiple travel services before generating a final answer.
+This project introduces an Agentic AI architecture capable of:
 
-Core capabilities include:
+* Planning multi-step travel tasks
+* Retrieving destination knowledge
+* Accessing external travel services
+* Combining multiple information sources
+* Generating personalized travel recommendations
 
-* Flight Search
-* Hotel Discovery
-* Restaurant Recommendations
-* Weather Forecasting
-* Currency Exchange Lookup
-* Travel FAQ Question Answering
-* Knowledge-Grounded Trip Planning
+The result is a travel intelligence system capable of delivering more grounded, actionable, and context-aware responses.
 
 ---
 
 # 🎯 Key Features
 
-* Agentic AI with LangGraph
-* ReAct-Based Tool Calling
+* Agentic AI powered by LangGraph
+* ReAct-based tool orchestration
 * Retrieval-Augmented Generation (RAG)
-* Real-Time Flight Search
-* Hotel Recommendation System
-* Restaurant Discovery
-* Weather Intelligence
-* Currency Conversion Support
-* Personalized Itinerary Generation
-* Travel Knowledge Base Retrieval
+* Flight search integration
+* Hotel discovery and recommendation
+* Restaurant recommendation
+* Weather intelligence retrieval
+* Currency exchange lookup
+* Travel FAQ retrieval
+* Personalized itinerary generation
+* Knowledge-grounded travel planning
+
+---
+
+# 🏗 System Architecture
+
+The system combines agentic reasoning, retrieval-augmented generation, vector search, and external travel APIs within a unified orchestration framework.
+
+Core layers include:
+
+* Agent Layer (LangGraph + ReAct)
+* Tool Execution Layer
+* Retrieval Layer (LanceDB)
+* Travel Knowledge Layer
+* External Travel APIs
+* Response Generation Layer
+
+This architecture enables dynamic planning, autonomous tool selection, knowledge retrieval, and grounded response generation.
+
+---
+
+# 🤖 Why Agentic AI?
+
+Traditional travel assistants rely on a single LLM response, limiting their ability to access external information and perform multi-step planning.
+
+This project adopts an Agentic AI architecture that enables:
+
+* Dynamic tool selection
+* Multi-step reasoning
+* Autonomous planning
+* Knowledge-grounded generation
+* Real-time information retrieval
+
+As a result, the assistant can coordinate multiple travel services and generate more reliable recommendations.
 
 ---
 
@@ -86,27 +117,27 @@ Core capabilities include:
 ```mermaid
 flowchart TD
 
-A[User Request]
+A[User Travel Request]
 
-A --> B[LangGraph Agent]
+A --> B[LangGraph ReAct Agent]
 
 B --> C{Task Planning}
 
 C --> D[Flight Search]
 
-C --> E[Hotel Search]
+C --> E[Hotel Discovery]
 
-C --> F[Restaurant Search]
+C --> F[Restaurant Recommendation]
 
-C --> G[Weather Lookup]
+C --> G[Weather Intelligence]
 
 C --> H[Currency Exchange]
 
-C --> I[FAQ Retrieval]
+C --> I[Travel FAQ Retrieval]
 
-C --> J[Travel RAG Planner]
+C --> J[RAG Travel Planner]
 
-J --> K[LanceDB Retrieval]
+J --> K[LanceDB Vector Search]
 
 K --> L[Travel Knowledge Base]
 
@@ -124,24 +155,25 @@ I --> M
 
 L --> M
 
-M --> N[Final Answer]
+M --> N[Personalized Travel Recommendation]
 ```
 
 ---
 
 # 📚 Travel Knowledge Retrieval
 
-The system uses Retrieval-Augmented Generation (RAG) to provide grounded travel recommendations.
+The itinerary generation module is powered by Retrieval-Augmented Generation (RAG).
 
-Knowledge sources include:
+Instead of relying solely on the language model’s internal knowledge, the system retrieves relevant travel information from a dedicated travel knowledge base before generating recommendations.
 
-* Travel Guide Books
-* Destination Information
-* Travel FAQs
-* Airport Metadata
-* Currency Datasets
+Benefits include:
 
-The retrieval layer is powered by:
+* More grounded travel suggestions
+* Reduced hallucinations
+* Better destination awareness
+* Knowledge-based itinerary generation
+
+The retrieval layer is implemented using:
 
 ```python
 SentenceTransformers
@@ -149,20 +181,18 @@ SentenceTransformers
 LanceDB
 ```
 
-allowing semantic search over travel-related knowledge sources.
-
 ---
 
-# 🔧 Tools and Services
+# 🔧 Tools and Technologies
 
 | Component            | Purpose                         |
 | -------------------- | ------------------------------- |
 | LangGraph            | Agent Orchestration             |
-| OpenAI GPT-4o-mini   | Reasoning & Response Generation |
+| GPT-4o-mini          | Reasoning & Response Generation |
 | LanceDB              | Vector Storage                  |
-| Amadeus API          | Flight & Travel Services        |
-| Tavily Search        | Real-Time Travel Information    |
-| SentenceTransformers | Embeddings                      |
+| SentenceTransformers | Embedding Generation            |
+| Amadeus API          | Travel Services                 |
+| Tavily Search        | Real-Time Information Retrieval |
 | LlamaParse           | Travel Document Parsing         |
 
 ---
@@ -170,9 +200,9 @@ allowing semantic search over travel-related knowledge sources.
 # 📁 Project Structure
 
 ```text
-Agentic-TravelBot
+Agentic-Travel-Planning-Assistant-with-Real-Time-Travel-Intelligence
 │
-├── travelbot_agent.py
+├── travelbot_agent.ipynb
 │
 ├── data/
 │   ├── airports.csv
@@ -183,9 +213,6 @@ Agentic-TravelBot
 ├── vectordb/
 │   ├── faq_db/
 │   └── travel_db/
-│
-├── notebooks/
-│   └── experiments.ipynb
 │
 ├── requirements.txt
 │
@@ -199,9 +226,9 @@ Agentic-TravelBot
 ## Clone Repository
 
 ```bash
-git clone https://github.com/farzadjannati/Agentic-TravelBot.git
+git clone https://github.com/farzadjannati/Agentic-Travel-Planning-Assistant-with-Real-Time-Travel-Intelligence.git
 
-cd Agentic-TravelBot
+cd Agentic-Travel-Planning-Assistant-with-Real-Time-Travel-Intelligence
 ```
 
 ## Create Environment
@@ -240,9 +267,13 @@ LLAMA_CLOUD_API_KEY=YOUR_API_KEY
 
 # ▶ Running the Application
 
-```bash
-python travelbot_agent.py
+Open and run:
+
+```text
+travelbot_agent.ipynb
 ```
+
+using Jupyter Notebook or Google Colab.
 
 ---
 
@@ -275,7 +306,7 @@ Research Assistant @ Social Networks Lab
 
 **Research Interests:** NLP, Large Language Models (LLMs), Agentic AI, Retrieval-Augmented Generation (RAG), Information Retrieval
 
-📧 [farzadjannati@ut.ac.ir](mailto:farzadjannati@ut.ac.ir)
+📧 [farzadjannati@ut.ac.ir](mailto:farzadjannati@ut.ac.ir) | 💻 [github.com/farzadjannati](https://github.com/farzadjannati) | 💼 [linkedin.com/in/farzadjannati](https://www.linkedin.com/in/farzadjannati)
 
 ---
 
@@ -287,6 +318,6 @@ If you find this project useful, consider giving it a star ⭐
 
 <p align="center">
 
-Built with ❤️ using LangGraph, OpenAI, LanceDB, Tavily and Amadeus
+Built with ❤️ using LangGraph, OpenAI, LanceDB, Tavily, Amadeus and RAG
 
 </p>
