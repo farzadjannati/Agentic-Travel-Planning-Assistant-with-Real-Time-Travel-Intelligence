@@ -31,17 +31,16 @@ This project introduces an Agentic AI Travel Assistant that combines LangGraph o
 ## Table of Contents
 
 1. [Overview](#-overview)
-2. [Key Features](#-key-features)
-3. [System Architecture](#-system-architecture)
-4. [Agent Workflow](#agent-workflow)
-5. [Travel Knowledge Retrieval](#-travel-knowledge-retrieval)
-6. [Tools and Technologies](#-tools-and-technologies)
-7. [Project Structure](#-project-structure)
-8. [Installation](#-installation)
-9. [Environment Variables](#-environment-variables)
-10. [License](#license)
-11. [Author](#author)
-12. [Support](#-support)
+2. [System Architecture](#-system-architecture)
+3. [Agent Workflow](#agent-workflow)
+4. [Travel Knowledge Retrieval](#-travel-knowledge-retrieval)
+5. [Tools and Technologies](#-tools-and-technologies)
+6. [Project Structure](#-project-structure)
+7. [Installation](#-installation)
+8. [Environment Variables](#-environment-variables)
+9. [License](#license)
+10. [Author](#author)
+11. [Support](#-support)
 
 # 📌 Overview
 
@@ -58,22 +57,6 @@ Core capabilities include:
 * Currency Exchange Lookup
 * Travel FAQ Question Answering
 * Knowledge-Grounded Trip Planning
-
----
-
-# 🎯 Key Features
-
-* Agentic AI powered by LangGraph
-* ReAct-based tool orchestration
-* Retrieval-Augmented Generation (RAG)
-* Flight search integration
-* Hotel discovery and recommendation
-* Restaurant recommendation
-* Weather intelligence retrieval
-* Currency exchange lookup
-* Travel FAQ retrieval
-* Personalized itinerary generation
-* Knowledge-grounded travel planning
 
 ---
 
