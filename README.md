@@ -19,8 +19,6 @@ The project demonstrates how autonomous agents can orchestrate multiple travel s
 [![LlamaParse](https://img.shields.io/badge/LlamaParse-Document_Parsing-6D28D9?style=flat)](https://cloud.llamaindex.ai/parse)
 [![Amadeus API](https://img.shields.io/badge/Amadeus-Travel_API-005EB8?style=flat)](https://developers.amadeus.com/)
 [![Tavily Search](https://img.shields.io/badge/Tavily-Real_Time_Search-1E293B?style=flat)](https://tavily.com/)
-[![Agentic AI](https://img.shields.io/badge/AI-Agentic_Systems-0284C7?style=flat)](#)
-[![Travel AI](https://img.shields.io/badge/Domain-Travel_AI-059669?style=flat)](#)
 [![License](https://img.shields.io/badge/License-MIT-4B5563?style=flat)](https://opensource.org/licenses/MIT)
 </div>
 
